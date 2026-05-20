@@ -1,0 +1,53 @@
+version: 0.1
+indicator_schema:
+  - id: power_deliverability
+    line: power
+    description: Firm, timely, price-competitive power for high-density AI loads.
+    example_metrics:
+      - delivered_or_committed_high_density_mw
+      - grid_connection_status
+      - industrial_electricity_price_index
+      - transformer_substation_availability
+  - id: accelerator_access
+    line: accelerators
+    description: Packaged GPUs or custom ASICs available by date, not merely purchase intent.
+    example_metrics:
+      - announced_advanced_ai_processors
+      - packaged_accelerators_per_capita
+      - accelerator_delivery_date_confidence
+  - id: hbm_packaging
+    line: memory_packaging
+    description: HBM supply, advanced packaging throughput and rack integration visibility.
+    example_metrics:
+      - hbm_supply_exposure
+      - advanced_packaging_access
+      - bottleneck_generation_notes
+  - id: sites_networks
+    line: sites_networks
+    description: Permitted campuses, cooling, fiber, cloud interconnection and commissioning schedule.
+    example_metrics:
+      - permitted_site_count
+      - cooling_solution_confidence
+      - network_interconnection_quality
+  - id: creditworthy_offtake
+    line: offtake
+    description: Contracted demand strong enough to support project finance.
+    example_metrics:
+      - anchor_customer_credit_quality
+      - take_or_pay_evidence
+      - prepayment_or_customer_funded_equipment
+  - id: operating_talent
+    line: talent
+    description: Semiconductor, power, grid, cloud, data-centre and project-finance operating capability.
+    example_metrics:
+      - relevant_engineering_talent_proxy
+      - data_centre_operator_depth
+      - permitting_execution_capacity
+fields:
+  region: string
+  indicator_id: string
+  score: integer_0_to_5
+  confidence: [observed, estimated, missing]
+  as_of_date: date
+  source_id: string
+  notes: string

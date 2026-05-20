@@ -1,0 +1,43 @@
+sources:
+  - id: cme_compute_futures_2026_05_12
+    title: CME Group and Silicon Data Partner to Launch First Compute Futures
+    publisher: CME Group
+    date: 2026-05-12
+    url: https://www.cmegroup.com/media-room/press-releases/2026/5/12/cme_group_and_silicondatapartnertolaunchfirstcomputefutures.html
+    category: market_structure
+  - id: oracle_q3_fy26_rpo
+    title: Oracle Announces Fiscal Year 2026 Third Quarter Financial Results
+    publisher: Oracle
+    date: 2026-03-10
+    url: https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Fiscal-Year-2026-Third-Quarter-Financial-Results/default.aspx
+    category: contracted_demand
+  - id: microsoft_fy26_q3_capex
+    title: Microsoft Fiscal Year 2026 Third Quarter Earnings Conference Call
+    publisher: Microsoft
+    date: 2026-04-29
+    url: https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3
+    category: capex_capacity
+  - id: coreweave_ddtl_2026
+    title: CoreWeave Closes Landmark $8.5 Billion Financing Facility
+    publisher: CoreWeave
+    date: 2026-03-31
+    url: https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-Landmark-8-5-Billion-Financing-Facility-Achieving-First-Investment-Grade-Rated-GPU-backed-Financing/default.aspx
+    category: structured_credit
+  - id: related_blackstone_oracle_2026
+    title: Related Digital Announces Financing for $16 Billion Oracle Data Center Project
+    publisher: Blackstone
+    date: 2026-04-24
+    url: https://www.blackstone.com/news/press/related-digital-announces-financing-for-16-billion-oracle-data-center-project-in-saline-township-michigan/
+    category: project_finance
+  - id: iea_energy_ai_2026
+    title: Energy and AI - Energy demand from AI
+    publisher: International Energy Agency
+    date: 2026
+    url: https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai
+    category: power_demand
+  - id: eib_ec_ai_gigafactories_2025
+    title: EIB Group and European Commission join forces to finance AI gigafactories
+    publisher: European Investment Bank
+    date: 2025-12-04
+    url: https://www.eib.org/en/press/all/2025-491-eib-group-and-european-commission-join-forces-to-finance-ai-gigafactories
+    category: public_finance

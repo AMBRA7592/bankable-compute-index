@@ -1,0 +1,6 @@
+region,indicator_id,score,confidence,as_of_date,source_id,notes
+European Union,power_deliverability,,missing,2026-05-18,iea_energy_ai_2026,"Populate with delivered MW, firm grid status and price data."
+United States,creditworthy_offtake,,missing,2026-05-18,oracle_q3_fy26_rpo,"Use public RPO, take-or-pay and project finance evidence where available."
+China,hbm_packaging,,missing,2026-05-18,,"Public evidence likely uneven; flag confidence explicitly."
+Gulf,sites_networks,,missing,2026-05-18,,"Track AI campus announcements, power source and cloud partners."
+Japan,operating_talent,,missing,2026-05-18,,"Potentially strong industrial and power-engineering base; source carefully."

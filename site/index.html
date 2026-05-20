@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bankable Compute Index</title>
+  <meta name="description" content="A public, source-backed framework for assessing the bankability of AI compute capacity. Version 0.1.">
+  <style>
+    :root {
+      --ink: #111;
+      --muted: #555;
+      --accent: #193452;
+      --rule: #e3e6ea;
+      --card-bg: #fafbfc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 780px;
+      margin: 48px auto;
+      line-height: 1.55;
+      padding: 0 24px;
+      color: var(--ink);
+    }
+    h1 { color: var(--accent); margin-bottom: 6px; }
+    h2 { color: var(--accent); margin-top: 36px; border-bottom: 1px solid var(--rule); padding-bottom: 6px; }
+    .version { color: var(--muted); font-size: 14px; margin-top: 0; margin-bottom: 28px; }
+    .lede { font-size: 17px; }
+    code { background: #f3f5f7; padding: 2px 5px; border-radius: 4px; font-size: 14px; }
+    .card { border: 1px solid var(--rule); padding: 18px 22px; border-radius: 10px; background: var(--card-bg); margin: 16px 0; }
+    .grades { display: grid; grid-template-columns: 1fr; gap: 8px; margin: 0; padding: 0; list-style: none; }
+    .grades li { padding: 8px 12px; background: var(--card-bg); border-left: 3px solid var(--accent); border-radius: 4px; }
+    .grades strong { display: inline-block; min-width: 240px; }
+    ol.scorecard { padding-left: 22px; }
+    ol.scorecard li { margin-bottom: 6px; }
+    footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <h1>Bankable Compute Index</h1>
+  <p class="version">Version 0.1 &middot; May 2026</p>
+
+  <p class="lede"><strong>Thesis:</strong> the scarce unit in AI infrastructure is not data or generic compute. It is <em>bankable compute</em> — powered, permitted, networked accelerator capacity with a credible delivery date and a customer contract strong enough to support external financing.</p>
+
+  <div class="card">
+    <p style="margin:0">This is a <strong>methodology, not a ranking</strong>. v0.1 ships an inspectable framework with explicit confidence grades and visible missing data. Disagreement with the weighting or definitions is a feature, not a bug.</p>
+  </div>
+
+  <h2>Four quality grades</h2>
+  <ul class="grades">
+    <li><strong>Powered vs promised</strong> — Is the megawatt actually energised, or only announced?</li>
+    <li><strong>Priority access vs generic</strong> — Does the buyer sit at the top of an allocation hierarchy, or merely on a waitlist?</li>
+    <li><strong>Contract-backed vs speculative</strong> — Is the revenue claim creditworthy and term-defined, or merchant exposure?</li>
+    <li><strong>Refreshable vs stranded</strong> — Is there a credible hardware-refresh path, or will the asset be obsolete before debt amortises?</li>
+  </ul>
+
+  <h2>Six scorecard lines</h2>
+  <ol class="scorecard">
+    <li><strong>Power deliverability</strong> &mdash; firm, timely, price-competitive power for high-density loads</li>
+    <li><strong>Accelerator access</strong> &mdash; packaged GPUs or ASICs available by date, not purchase intent</li>
+    <li><strong>HBM and advanced packaging</strong> &mdash; high-bandwidth memory and CoWoS-class packaging</li>
+    <li><strong>Sites and networks</strong> &mdash; permitted campuses with cooling, fiber, interconnection</li>
+    <li><strong>Creditworthy offtake</strong> &mdash; take-or-pay contracts and customer-credit depth</li>
+    <li><strong>Operating talent</strong> &mdash; semiconductor, power, grid, data-centre operating capability</li>
+  </ol>
+
+  <h2>Repository</h2>
+  <p>Start with:</p>
+  <ul>
+    <li><code>docs/methodology.md</code> &mdash; definitions, scoring rules, mapping from scorecard lines to quality grades</li>
+    <li><code>schema/scorecard.yaml</code> &mdash; indicator schema</li>
+    <li><code>data/sources.yaml</code> &mdash; primary-source ledger</li>
+    <li><code>data/regions.csv</code> &mdash; region-by-indicator panel (v0.1: skeleton with explicit missing flags)</li>
+    <li><code>notes/monthly-monitor.md</code> &mdash; template for tracking new financing and policy events</li>
+  </ul>
+
+  <h2>How to cite</h2>
+  <div class="card">
+    <p style="margin:0">Brandes, Amadeus. <em>Bankable Compute Index</em>, version 0.1, May 2026.</p>
+  </div>
+
+  <footer>
+    <p>Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>. Validator script available under MIT. By Amadeus Brandes.</p>
+  </footer>
+</body>
+</html>

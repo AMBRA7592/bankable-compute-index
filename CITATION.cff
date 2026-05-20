@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: Bankable Compute Index
+message: "If you use this work, please cite it as below."
+type: dataset
+authors:
+  - given-names: Amadeus
+    family-names: Brandes
+date-released: 2026-05-19
+version: 0.1.0
+abstract: >
+  A versioned, source-backed framework for assessing the bankability
+  of AI compute capacity. Distinguishes four quality grades of
+  capacity — powered vs promised, priority access vs generic,
+  contract-backed vs speculative, refreshable vs stranded — and
+  scores them against six lines: power deliverability, accelerator
+  access, HBM and advanced packaging, sites and networks,
+  creditworthy offtake, and operating talent.
+keywords:
+  - AI infrastructure
+  - project finance
+  - compute sovereignty
+  - bankable compute
+  - data centres
+  - capital markets
+  - infrastructure finance
+license: CC-BY-4.0
