@@ -25,6 +25,8 @@
     h1 { color: var(--accent); margin-bottom: 6px; }
     h2 { color: var(--accent); margin-top: 36px; border-bottom: 1px solid var(--rule); padding-bottom: 6px; }
     .version { color: var(--muted); font-size: 14px; margin-top: 0; margin-bottom: 28px; }
+    .version a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+    .version a:hover { border-bottom-style: solid; }
     .lede { font-size: 17px; }
     code { background: #f3f5f7; padding: 2px 5px; border-radius: 4px; font-size: 14px; }
     .card { border: 1px solid var(--rule); padding: 18px 22px; border-radius: 10px; background: var(--card-bg); margin: 16px 0; }
@@ -33,15 +35,19 @@
     .grades strong { display: inline-block; min-width: 240px; }
     ol.scorecard { padding-left: 22px; }
     ol.scorecard li { margin-bottom: 6px; }
+    ul.repo { padding-left: 22px; }
+    ul.repo li { margin-bottom: 6px; }
+    ul.repo a { color: var(--accent); text-decoration: none; }
+    ul.repo a:hover code { background: #e6ecf2; }
     footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
-    a { color: var(--accent); }
+    footer a { color: var(--accent); }
   </style>
 </head>
 <body>
   <h1>Bankable Compute Index</h1>
-  <p class="version">Version 0.1 &middot; May 2026</p>
+  <p class="version">Version 0.1 &middot; May 2026 &middot; <a href="https://github.com/AMBRA7592/bankable-compute-index">View source on GitHub</a></p>
 
-  <p class="lede"><strong>Thesis:</strong> the scarce unit in AI infrastructure is not data or generic compute. It is <em>bankable compute</em> — powered, permitted, networked accelerator capacity with a credible delivery date and a customer contract strong enough to support external financing.</p>
+  <p class="lede"><strong>Thesis:</strong> the scarce unit in AI infrastructure is not data or generic compute. It is <em>bankable compute</em> &mdash; powered, permitted, networked accelerator capacity with a credible delivery date and a customer contract strong enough to support external financing.</p>
 
   <div class="card">
     <p style="margin:0">This is a <strong>methodology, not a ranking</strong>. v0.1 ships an inspectable framework with explicit confidence grades and visible missing data. Disagreement with the weighting or definitions is a feature, not a bug.</p>
@@ -49,10 +55,10 @@
 
   <h2>Four quality grades</h2>
   <ul class="grades">
-    <li><strong>Powered vs promised</strong> — Is the megawatt actually energised, or only announced?</li>
-    <li><strong>Priority access vs generic</strong> — Does the buyer sit at the top of an allocation hierarchy, or merely on a waitlist?</li>
-    <li><strong>Contract-backed vs speculative</strong> — Is the revenue claim creditworthy and term-defined, or merchant exposure?</li>
-    <li><strong>Refreshable vs stranded</strong> — Is there a credible hardware-refresh path, or will the asset be obsolete before debt amortises?</li>
+    <li><strong>Powered vs promised</strong> &mdash; Is the megawatt actually energised, or only announced?</li>
+    <li><strong>Priority access vs generic</strong> &mdash; Does the buyer sit at the top of an allocation hierarchy, or merely on a waitlist?</li>
+    <li><strong>Contract-backed vs speculative</strong> &mdash; Is the revenue claim creditworthy and term-defined, or merchant exposure?</li>
+    <li><strong>Refreshable vs stranded</strong> &mdash; Is there a credible hardware-refresh path, or will the asset be obsolete before debt amortises?</li>
   </ul>
 
   <h2>Six scorecard lines</h2>
@@ -67,13 +73,14 @@
 
   <h2>Repository</h2>
   <p>Start with:</p>
-  <ul>
-    <li><code>docs/methodology.md</code> &mdash; definitions, scoring rules, mapping from scorecard lines to quality grades</li>
-    <li><code>schema/scorecard.yaml</code> &mdash; indicator schema</li>
-    <li><code>data/sources.yaml</code> &mdash; primary-source ledger</li>
-    <li><code>data/regions.csv</code> &mdash; region-by-indicator panel (v0.1: skeleton with explicit missing flags)</li>
-    <li><code>notes/monthly-monitor.md</code> &mdash; template for tracking new financing and policy events</li>
+  <ul class="repo">
+    <li><a href="https://github.com/AMBRA7592/bankable-compute-index/blob/main/docs/methodology.md"><code>docs/methodology.md</code></a> &mdash; definitions, scoring rules, mapping from scorecard lines to quality grades</li>
+    <li><a href="https://github.com/AMBRA7592/bankable-compute-index/blob/main/schema/scorecard.yaml"><code>schema/scorecard.yaml</code></a> &mdash; indicator schema</li>
+    <li><a href="https://github.com/AMBRA7592/bankable-compute-index/blob/main/data/sources.yaml"><code>data/sources.yaml</code></a> &mdash; primary-source ledger</li>
+    <li><a href="https://github.com/AMBRA7592/bankable-compute-index/blob/main/data/regions.csv"><code>data/regions.csv</code></a> &mdash; region-by-indicator panel (v0.1: skeleton with explicit missing flags)</li>
+    <li><a href="https://github.com/AMBRA7592/bankable-compute-index/blob/main/notes/monthly-monitor.md"><code>notes/monthly-monitor.md</code></a> &mdash; template for tracking new financing and policy events</li>
   </ul>
+  <p style="margin-top:14px;"><a href="https://github.com/AMBRA7592/bankable-compute-index">Browse the full repository on GitHub &rarr;</a></p>
 
   <h2>How to cite</h2>
   <div class="card">
@@ -82,6 +89,7 @@
 
   <footer>
     <p>Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>. Validator script available under MIT. By Amadeus Brandes.</p>
+    <p><a href="https://github.com/AMBRA7592/bankable-compute-index">Source on GitHub</a></p>
   </footer>
 </body>
 </html>
